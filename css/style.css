@@ -38,9 +38,6 @@ hr{
     border: 1px solid rgb(235, 230, 230);
 }
 /* header part start */
-header{
-    
-}
 nav{
     margin-top: 50px;
     display: flex;
@@ -86,7 +83,8 @@ nav ul li:hover a{
 .banner-left p,.featured-right p{
     line-height: 30px;
     color: #3A3A3A;
-    font-size: 16px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .banner-right img{
@@ -102,6 +100,7 @@ nav ul li:hover a{
     transform: scale(1.10);
     transition: 1s ease-out;
 }
+
 .websites{
 height: 110px;
 display: flex;
@@ -190,23 +189,23 @@ font-size: 40px;
     font-size: 1.2em;
     margin: 10px;
 }
-
+/* footer section start */
 .footer-box{
     background-color: #28052c;
     margin-top: 100px;
 }
 .footer-title{
-    color: white;
+    color: rgb(253, 237, 237);
     padding-top: 50px;
     text-align: center;
 }
 .footer-box h2,h3{
-    color: #fff;
+    color: rgb(238, 226, 226);
     text-align: center;
     margin-bottom: 5px;
 }
 .social-icon,a{
-    color: #fff;
+    color: rgb(212, 205, 205);
     text-align: center;
     margin-bottom: 5px;
 }
@@ -216,3 +215,39 @@ font-size: 40px;
     margin-top: 20px;
     font-size: 30px;
 }
+
+
+/* footer section end */
+
+
+
+/*Media query   */
+@media only screen and (max-width: 688px) {
+    nav{
+        margin: 50px 0px 0 128px;
+    }
+    nav ul{
+        display: none;
+    }
+    .banner{
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-left p{
+        width: 465px;
+    }
+    .websites{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 20px;
+    }
+    .items-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 10pxpx;
+    }
+
+
+}
+
